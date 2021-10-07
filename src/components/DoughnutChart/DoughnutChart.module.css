@@ -1,0 +1,7 @@
+.canvas {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transform: scale(0.85);
+  z-index: 1;
+}

@@ -1,0 +1,79 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #c6d6e3;
+  position: relative;
+  border-radius: 10px;
+}
+
+.wrapper .header {
+  width: 98%;
+  height: 38%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  background-color: #c6d6e3;
+  position: relative;
+}
+
+.wrapper .header h2 {
+  color: #000000;
+  font-size: 23px;
+  font-weight: 500;
+  padding-left: 30px;
+}
+
+.wrapper .header .headerMenu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: #000000;
+  font-weight: 600;
+}
+
+.wrapper .table {
+  width: 98%;
+  height: 60%;
+  position: relative;
+}
+
+.TablesAreWeird {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000000;
+  border-bottom: 1px solid rgba(65, 85, 142, 0.19);
+}
+
+.nameMenu {
+  font-size: 13px;
+  font-weight: 600;
+  padding-left: 10px;
+  transform: translateX(10px);
+}
+
+.innerWrapper p {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.name {
+  font-size: 13px;
+  padding-left: 10px;
+  transform: translateX(25px);
+  border-left: solid 5px black;
+}
+
+.innerWrapper {
+  width: 45%;
+  padding-left: 10px;
+}

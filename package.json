@@ -1,0 +1,61 @@
+{
+  "name": "diggit-challenge-fullstack",
+  "version": "1.0.0",
+  "private": false,
+  "proxy": "http://localhost:4000",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.21.4",
+    "chart.js": "^2.9.3",
+    "font-awesome": "^4.7.0",
+    "node-fetch": "^3.0.0",
+    "numeral": "^2.0.6",
+    "react": "^16.14.0",
+    "react-chartjs-2": "^2.9.0",
+    "react-dom": "^16.14.0",
+    "react-dropdown": "^1.9.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.23.2"
+  },
+  "description": "> Implement two gradient area charts and a supporting back-end.",
+  "main": "test.js",
+  "repository": {
+    "type": "git",
+    "url": "https://git.diggit.space/debonair-sound/gradient-area-charts-fs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,133 @@
+openapi: 3.1.0
+info:
+  title: Chart API Specification
+  version: '1.0'
+  description: This specification describes the API that is used to serve data for the front-end chart
+  contact:
+    name: IN
+servers:
+  - url: 'http://localhost:3000'
+    description: Basic local server
+paths:
+  /companies:
+    parameters: []
+    get:
+      summary: Get list of all companies
+      operationId: get-companies
+      description: Retrieve a list of companies
+      tags: []
+      responses:
+        '200':
+          description: List of companies
+          content:
+            application/json:
+              schema:
+                type: array
+                minItems: 1
+                items:
+                  $ref: '#/components/schemas/Company'
+              examples:
+                Example:
+                  value:
+                    - id: 1
+                      name: Google
+                      advisor: Adam Smith
+                      gender: male
+                      meetingDate: '2021-10-31'
+                    - id: 2
+                      name: Netflix
+                      advisor: Simen Newton
+                      gender: female
+                      meetingDate: '2021-04-11'
+        '500':
+          description: Something went wrong
+  /individuals:
+    parameters: []
+    get:
+      summary: Get list of all individuals
+      description: Retrieve a list of individuals
+      operationId: get-individuals
+      responses:
+        '200':
+          description: List of individuals
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Individual'
+              examples:
+                example-1:
+                  value:
+                    - id: 1
+                      name: Ivan
+                      surname: Malkov
+                      gender: male
+                      meetingDate: '2019-08-24'
+        '500':
+          description: Something went wrong
+components:
+  schemas:
+    Company:
+      title: Company
+      type: object
+      description: Model of company entry
+      x-examples:
+        example-1:
+          id: 1
+          name: Google
+          agent: Adam Smith
+          gender: male
+          meetingDate: '2020-10-31'
+      properties:
+        id:
+          type: integer
+          description: Unique identifier for the given company.
+        name:
+          type: string
+          description: Name of the company
+        advisor:
+          type: string
+          description: Full name of company's advisor
+        gender:
+          type: string
+          enum:
+            - male
+            - female
+        meetingDate:
+          type: string
+          format: date
+      required:
+        - id
+        - name
+        - advisor
+        - gender
+        - meetingDate
+    Individual:
+      title: Individual
+      type: object
+      properties:
+        id:
+          type: integer
+          description: Unique id of a person
+        name:
+          type: string
+          description: First name of a person
+        surname:
+          type: string
+          description: Person's surname
+        gender:
+          type: string
+          enum:
+            - male
+            - female
+        meetingDate:
+          type: string
+          format: date
+      required:
+        - id
+        - name
+        - surname
+        - gender
+        - meetingDate
+      description: Model of Individual entry

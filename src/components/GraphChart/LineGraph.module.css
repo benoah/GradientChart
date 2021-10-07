@@ -1,0 +1,8 @@
+.lineWrapper {
+  background: #c6d6e3 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  opacity: 1;
+  max-height: 349px;
+  max-width: 100%;
+  padding: 4px;
+}
