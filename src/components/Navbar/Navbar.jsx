@@ -23,9 +23,7 @@ const Navbar = ({ user }) => {
 
   return (
     <nav>
-      <div className={styles.logoWrapper}>
-        <img src={Logo} className={styles.mainLogo} alt={"logo"} />
-      </div>
+    <div></div>
       <div className={styles.linksWrapper}>
         <div className={styles.links}>
           <h1>Account</h1>

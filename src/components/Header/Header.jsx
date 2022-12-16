@@ -14,26 +14,22 @@ const Header = ({ dropdownData, displayed, headerInfo }) => {
           />
         </div>
         <div className={styles.block}>
-          <h2>Total signups</h2>
+          <h2>Total Salg</h2>
           <p className={styles.green}>{headerInfo.totalSignups}</p>
         </div>
         <div className={styles.block}>
-          <h2>Last Week</h2>
+          <h2>Siste Uke</h2>
           <p className={styles.purple}>{headerInfo.lastWeek}</p>
         </div>
         <div className={styles.block}>
-          <h2>Total investments</h2>
-          <p className={styles.blue}>{headerInfo.totalInvestments}</p>
-        </div>
-        <div className={styles.block}>
-          <h2>Average investment</h2>
+          <h2>Gjennomsnitts Kjøp </h2>
           <p>
             <span className={styles.currency}>{headerInfo.currency}&nbsp;</span>
             <span className={styles.investmentValue}>{headerInfo.value}</span>
           </p>
         </div>
         <div className={styles.block}>
-          <h2>Total exits</h2>
+          <h2>Totalt Salg  Idag</h2>
           <p className={styles.greenish}>23</p>
         </div>
       </div>

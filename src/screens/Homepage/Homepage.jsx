@@ -11,7 +11,7 @@ const Homepage = () => {
    // setState iam not sure yet 
   const [individualsData] = useState([]);
   const [companiesData] = useState([]);
-  const [currentUser] = useState("Elsa Andersen");
+  const [currentUser] = useState("Are");
 
 
   // The variabel is getting populated 
@@ -31,7 +31,7 @@ const Homepage = () => {
   // The variabel is getting populated 
   const [doughnut] = useState({
     data: [364, 284],
-    labels: ["Companies", "Individuals"],
+    labels: ["Elektrisk", "Bensin"],
   });
 
    // The variabel is getting populated 
